@@ -1,0 +1,636 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background-image: url('starbg1.png');
+      background-size: cover;
+      background-position: center;
+      animation: starLoop 1.3s steps(3) infinite;
+    }
+
+    @keyframes starLoop {
+      0%   { background-image: url('starbg1.png'); }
+      33%  { background-image: url('starbg2.png'); }
+      66%  { background-image: url('starbg3.png'); }
+    }
+
+.sun-container {
+  position: absolute;
+  top: 8.5%;
+  right: 92%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.sun-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230%;
+  height: 230%;
+  object-fit: contain;
+}
+.sun-img1 {
+  animation: sun-fade1 1s infinite;
+}
+.sun-img2 {
+  animation: sun-fade2 1s infinite;
+}
+@keyframes sun-fade1 {
+  5%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes sun-fade2 {
+  5%, 50% { opacity: 0; }
+  55%, 100% { opacity: 1; }
+}
+
+.mercury-container {
+  position: absolute;
+  top: 54%;
+  right: 59%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.mercury-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37%;
+  height: 37%;
+  object-fit: contain;
+}
+.mercury-img1 {
+  animation: mercury-fade1 1.5s infinite;
+}
+.mercury-img2 {
+  animation: mercury-fade2 1.5s infinite;
+}
+@keyframes mercury-fade1 {
+  5%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes mercury-fade2 {
+  5%, 50% { opacity: 0; }
+  55%, 100% { opacity: 1; }
+}
+   
+.venus-container {
+  position: absolute;
+  top: 38%;
+  right: 55%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.venus-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44%;
+  height: 44%;
+  object-fit: contain;
+}
+.venus-img1 {
+  animation: venus-fade1 1.5s infinite;
+}
+.venus-img2 {
+  animation: venus-fade2 1.5s infinite;
+}
+@keyframes venus-fade1 {
+  0%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes venus-fade2 {
+  0%, 35% { opacity: 0; }
+  65%, 100% { opacity: 1; }
+}
+
+.earth-container {
+  position: absolute;
+  top: 47%;
+  right: 49%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.earth-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44%;
+  height: 44%;
+  object-fit: contain;
+}
+.earth-img1 {
+  animation: earth-fade1 1.5s infinite;
+}
+.earth-img2 {
+  animation: earth-fade2 1.5s infinite;
+}
+@keyframes earth-fade1 {
+  0%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes earth-fade2 {
+  0%, 35% { opacity: 0; }
+  65%, 100% { opacity: 1; }
+}
+
+.moon-container {
+  position: absolute;
+  top: 43%;
+  right: 44%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.moon-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  object-fit: contain;
+}
+.moon-img1 {
+  animation: moon-fade1 2s infinite;
+}
+.moon-img2 {
+  animation: moon-fade2 2s infinite;
+}
+@keyframes moon-fade1 {
+  0%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes moon-fade2 {
+  0%, 35% { opacity: 0; }
+  65%, 100% { opacity: 1; }
+}
+
+.mars-container {
+  position: absolute;
+  top: 50%;
+  right: 41%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.mars-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44%;
+  height: 44%;
+  object-fit: contain;
+}
+.mars-img1 {
+  animation: mars-fade1 1.3s infinite;
+}
+.mars-img2 {
+  animation: mars-fade2 1.3s infinite;
+}
+@keyframes mars-fade1 {
+  0%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes mars-fade2 {
+  0%, 35% { opacity: 0; }
+  65%, 100% { opacity: 1; }
+}
+
+.jupiter-container {
+  position: absolute;
+  top: 26%;
+  right: 35.5%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.jupiter-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  object-fit: contain;
+}
+.jupiter-img1 {
+  animation: jupiter-fade1 1.5s infinite;
+}
+.jupiter-img2 {
+  animation: jupiter-fade2 1.5s infinite;
+}
+@keyframes jupiter-fade1 {
+  5%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes jupiter-fade2 {
+  5%, 50% { opacity: 0; }
+  55%, 100% { opacity: 1; }
+}
+
+.saturn-container {
+  position: absolute;
+  top: 47%;
+  right: 17%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.saturn-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+}
+.saturn-img1 {
+  animation: saturn-fade1 1.5s infinite;
+}
+.saturn-img2 {
+  animation: saturn-fade2 1.5s infinite;
+}
+@keyframes saturn-fade1 {
+  5%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes saturn-fade2 {
+  5%, 50% { opacity: 0; }
+  55%, 100% { opacity: 1; }
+}
+
+.uranus-container {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.uranus-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+}
+.uranus-img1 {
+  animation: uranus-fade1 1.5s infinite;
+}
+.uranus-img2 {
+  animation: uranus-fade2 1.5s infinite;
+}
+@keyframes uranus-fade1 {
+  5%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes uranus-fade2 {
+  5%, 50% { opacity: 0; }
+  55%, 100% { opacity: 1; }
+}
+
+.neptune-container {
+  position: absolute;
+  top: 58%;
+  right: -5%;
+  width: 220px;
+  height: 220px;
+  z-index: 10;
+}
+.neptune-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+.neptune-img1 {
+  animation: neptune-fade1 1.5s infinite;
+}
+.neptune-img2 {
+  animation: neptune-fade2 1.5s infinite;
+}
+@keyframes neptune-fade1 {
+  5%, 50% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes neptune-fade2 {
+  5%, 50% { opacity: 0; }
+  55%, 100% { opacity: 1; }
+}
+
+.alien-bot {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    animation: alien-float 3s ease-in-out infinite;
+}
+@keyframes alien-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+.alien-bot:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+.alien-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px rgba(127, 219, 255, 0.5));
+    animation: alien-pulse 2s ease-in-out infinite;
+}
+@keyframes alien-pulse {
+    0%, 100% { filter: drop-shadow(0 0 20px rgba(127, 219, 255, 0.5)); }
+    50% { filter: drop-shadow(0 0 30px rgba(127, 219, 255, 0.8)); }
+}
+.alien-glow {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(127, 219, 255, 0.3), transparent);
+    border-radius: 50%;
+    animation: glow-pulse 2s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+@keyframes glow-pulse {
+    0% { opacity: 0.3; transform: scale(0.8); }
+    100% { opacity: 0.8; transform: scale(1.2); }
+}
+
+/* Chat Container Styles */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    background: rgba(0, 0, 30, 0.95);
+    border-radius: 20px;
+    border: 2px solid #7fdbff;
+    box-shadow: 0 0 40px rgba(127, 219, 255, 0.3);
+    display: none;
+    flex-direction: column;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+    animation: chat-slide-in 0.3s ease-out;
+}
+@keyframes chat-slide-in {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px) scale(0.9); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+.chat-container.visible {
+    display: flex;
+}
+.chat-container.closing {
+    animation: chat-slide-out 0.3s ease-in forwards;
+}
+@keyframes chat-slide-out {
+    from { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+    to { 
+        opacity: 0; 
+        transform: translateY(20px) scale(0.9); 
+    }
+}
+
+/* Chat Header */
+.chat-header {
+    background: linear-gradient(145deg, #7fdbff, #39cccc);
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 18px 18px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+.close-chat {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+.close-chat:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    color: #fff;
+    scrollbar-width: thin;
+    scrollbar-color: #7fdbff rgba(0, 0, 30, 0.5);
+}
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-messages::-webkit-scrollbar-track {
+    background: rgba(0, 0, 30, 0.5);
+}
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #7fdbff;
+    border-radius: 3px;
+}
+.message {
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    border-radius: 18px;
+    max-width: 85%;
+    animation: message-fade-in 0.4s ease-out;
+    line-height: 1.4;
+}
+@keyframes message-fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.user-message {
+    background: linear-gradient(145deg, #39cccc, #7fdbff);
+    color: #000;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+}
+.bot-message {
+    background: rgba(127, 219, 255, 0.15);
+    border: 1px solid rgba(127, 219, 255, 0.3);
+    color: #fff;
+    border-bottom-left-radius: 5px;
+}
+
+/* Loading Indicator */
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: #7fdbff;
+}
+.loading.visible {
+    display: block;
+}
+.loading-dots {
+    margin-bottom: 10px;
+}
+.loading-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #7fdbff;
+    margin: 0 3px;
+    animation: loading-bounce 1.4s infinite ease-in-out both;
+}
+.loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+.loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+@keyframes loading-bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid rgba(127, 219, 255, 0.3);
+    gap: 10px;
+}
+.chat-input input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #7fdbff;
+    border-radius: 25px;
+    background: rgba(0, 0, 20, 0.8);
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.chat-input input::placeholder {
+    color: #aaa;
+}
+.chat-input input:focus {
+    border-color: #39cccc;
+    box-shadow: 0 0 10px rgba(127, 219, 255, 0.3);
+}
+.send-button {
+    background: linear-gradient(145deg, #7fdbff, #39cccc);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.send-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(127, 219, 255, 0.4);
+}
+.send-button:active {
+    transform: scale(0.95);
+}
+
+/* Chat Overlay for mobile */
+.chat-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+.chat-overlay.visible {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 95%;
+        height: 85%;
+        right: 2.5%;
+        bottom: 2.5%;
+        border-radius: 15px;
+    }
+    
+    .alien-bot {
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Smaller planets on mobile */
+    .sun { width: 60px; height: 60px; }
+    .jupiter { width: 50px; height: 50px; }
+    .saturn { width: 45px; height: 45px; }
+    .earth { width: 25px; height: 25px; }
+    .mars { width: 22px; height: 22px; }
+    .venus { width: 22px; height: 22px; }
+    .uranus { width: 28px; height: 28px; }
+    .neptune { width: 28px; height: 28px; }
+    .mercury { width: 18px; height: 18px; }
+    .moon { width: 15px; height: 15px; }
+}
+
+@media (max-width: 480px) {
+    .chat-container {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        border: none;
+    }
+    
+    .chat-header {
+        border-radius: 0;
+        padding: 12px 15px;
+    }
+    
+    .chat-header h3 {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Bot - Your Cosmic Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="preload" href="starbg1.png" as="image">
+<link rel="preload" href="starbg2.png" as="image">
+<link rel="preload" href="starbg3.png" as="image">
+<link rel="preload" href="sun1.png" as="image">
+<link rel="preload" href="sun2.png" as="image">
+<link rel="preload" href="mercury1.png" as="image">
+<link rel="preload" href="mercury1.png" as="image">
+<link rel="preload" href="venus1.png" as="image">
+<link rel="preload" href="venus2.png" as="image">
+<link rel="preload" href="earth1.png" as="image">
+<link rel="preload" href="earth2.png" as="image">
+<link rel="preload" href="moon1.png" as="image">
+<link rel="preload" href="moon2.png" as="image">
+<link rel="preload" href="mars1.png" as="image">
+<link rel="preload" href="mars2.png" as="image">
+<link rel="preload" href="jupiter1.png" as="image">
+<link rel="preload" href="jupiter2.png" as="image">
+<link rel="preload" href="saturn1.png" as="image">
+<link rel="preload" href="saturn2.png" as="image">
+<link rel="preload" href="uranus1.png" as="image">
+<link rel="preload" href="uranus2.png" as="image">
+<link rel="preload" href="neptune1.png" as="image">
+<link rel="preload" href="neptune2.png" as="image">
+<body>
+    <!-- Sun -->
+    <div class="sun-container">
+        <img src="sun1.png" alt="Sun" class="sun-img sun-img1">
+        <img src="sun2.png" alt="Sun" class="sun-img sun-img2">
+    </div>
+
+    <!-- Mercury -->
+    <div class="mercury-container">
+        <img src="mercury1.png" alt="Mercury" class="mercury-img mercury-img1">
+        <img src="mercury2.png" alt="Mercury" class="mercury-img mercury-img2">
+    </div>
+
+    <!-- Venus -->
+    <div class="venus-container">
+        <img src="venus1.png" alt="Venus" class="venus-img venus-img1">
+        <img src="venus2.png" alt="Venus" class="venus-img venus-img2">
+    </div>
+
+    <!-- Earth -->
+    <div class="earth-container">
+        <img src="earth1.png" alt="Earth" class="earth-img earth-img1">
+        <img src="earth2.png" alt="Earth" class="earth-img earth-img2">
+    </div>
+
+     <!-- Moon -->
+    <div class="moon-container">
+        <img src="moon1.png" alt="Moon" class="moon-img moon-img1">
+        <img src="moon2.png" alt="Moon" class="moon-img moon-img2">
+    </div>
+
+     <!-- Mars -->
+    <div class="mars-container">
+        <img src="mars1.png" alt="Mars" class="mars-img mars-img1">
+        <img src="mars2.png" alt="Mars" class="mars-img mars-img2">
+    </div>
+    
+    <!-- Jupiter -->
+    <div class="jupiter-container">
+        <img src="jupiter1.png" alt="Jupiter" class="jupiter-img jupiter-img1">
+        <img src="jupiter2.png" alt="Jupiter" class="jupiter-img jupiter-img2">
+    </div>
+
+    <!--Saturn-->
+    <div class="saturn-container">
+        <img src="saturn1.png" alt="Saturn" class="saturn-img saturn-img1">
+        <img src="saturn2.png" alt="Saturn" class="saturn-img saturn-img2">
+    </div>
+
+     <!-- Uranus -->
+    <div class="uranus-container">
+        <img src="uranus1.png" alt="Uranus" class="uranus-img uranus-img1">
+        <img src="uranus2.png" alt="Uranus" class="uranus-img uranus-img2">
+    </div> 
+    
+    <!-- Neptune -->
+    <div class="neptune-container">
+        <img src="neptune1.png" alt="Neptune" class="neptune-img neptune-img1">
+        <img src="neptune2.png" alt="Neptune" class="neptune-img neptune-img2">
+    </div>
+
+    <!-- Alien -->
+    <div class="alien-bot" id="alienBot">
+        <img src="alen.jpg" alt="Space Bot" class="alien-image">
+        <div class="alien-glow"></div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>🛸 Space Bot - Your Cosmic Guide</h3>
+            <button class="close-chat" id="closeChat">&times;</button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                🚀 Greetings, Earthling! I'm your friendly space bot! Ask me anything about the cosmos - planets, stars, galaxies, space missions, or any cosmic mysteries you're curious about! ✨
+            </div>
+        </div>
+        
+        <div class="loading" id="loadingIndicator">
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>Space Bot is thinking...</p>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Ask me about space..." maxlength="500">
+            <button class="send-button" id="sendButton">
+                <span>🚀</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay for mobile -->
+    <div class="chat-overlay" id="chatOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
