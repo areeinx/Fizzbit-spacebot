@@ -5,47 +5,49 @@ html, body {
     }
 
     body {
-      background-image: url('starbg1.png');
+      background-image: url('assets/starbg1.png');
       background-size: cover;
       background-position: center;
       animation: starLoop 1.3s steps(3) infinite;
     }
 
     @keyframes starLoop {
-      0%   { background-image: url('starbg1.png'); }
-      33%  { background-image: url('starbg2.png'); }
-      66%  { background-image: url('starbg3.png'); }
+      0%   { background-image: url('assets/starbg1.png'); }
+      33%  { background-image: url('assets/starbg2.png'); }
+      66%  { background-image: url('assets/starbg3.png'); }
     }
 
 .sun-container {
-  position: absolute;
-  top: 8.5%;
-  right: 92%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 8.5%;
+    right: 92%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .sun-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 230%;
-  height: 230%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230%;
+    height: 230%;
+    object-fit: contain;
 }
 .sun-img1 {
-  animation: sun-fade1 1s infinite;
+    animation: sun-fade1 1.5s infinite;
 }
 .sun-img2 {
-  animation: sun-fade2 1s infinite;
+    animation: sun-fade2 1.5s infinite;
 }
 @keyframes sun-fade1 {
-  5%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes sun-fade2 {
-  5%, 50% { opacity: 0; }
-  55%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .mercury-container {
@@ -71,12 +73,14 @@ html, body {
   animation: mercury-fade2 1.5s infinite;
 }
 @keyframes mercury-fade1 {
-  5%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes mercury-fade2 {
-  5%, 50% { opacity: 0; }
-  55%, 100% { opacity: 1; }
+     0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
    
 .venus-container {
@@ -102,12 +106,14 @@ html, body {
   animation: venus-fade2 1.5s infinite;
 }
 @keyframes venus-fade1 {
-  0%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes venus-fade2 {
-  0%, 35% { opacity: 0; }
-  65%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .earth-container {
@@ -133,12 +139,14 @@ html, body {
   animation: earth-fade2 1.5s infinite;
 }
 @keyframes earth-fade1 {
-  0%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes earth-fade2 {
-  0%, 35% { opacity: 0; }
-  65%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .moon-container {
@@ -158,18 +166,20 @@ html, body {
   object-fit: contain;
 }
 .moon-img1 {
-  animation: moon-fade1 2s infinite;
+  animation: moon-fade1 1.5s infinite;
 }
 .moon-img2 {
-  animation: moon-fade2 2s infinite;
+  animation: moon-fade2 1.5s infinite;
 }
 @keyframes moon-fade1 {
-  0%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes moon-fade2 {
-  0%, 35% { opacity: 0; }
-  65%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .mars-container {
@@ -189,18 +199,20 @@ html, body {
   object-fit: contain;
 }
 .mars-img1 {
-  animation: mars-fade1 1.3s infinite;
+  animation: mars-fade1 1.5s infinite;
 }
 .mars-img2 {
-  animation: mars-fade2 1.3s infinite;
+  animation: mars-fade2 1.5s infinite;
 }
 @keyframes mars-fade1 {
-  0%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes mars-fade2 {
-  0%, 35% { opacity: 0; }
-  65%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .jupiter-container {
@@ -226,12 +238,14 @@ html, body {
   animation: jupiter-fade2 1.5s infinite;
 }
 @keyframes jupiter-fade1 {
-  5%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes jupiter-fade2 {
-  5%, 50% { opacity: 0; }
-  55%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .saturn-container {
@@ -257,12 +271,14 @@ html, body {
   animation: saturn-fade2 1.5s infinite;
 }
 @keyframes saturn-fade1 {
-  5%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes saturn-fade2 {
-  5%, 50% { opacity: 0; }
-  55%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .uranus-container {
@@ -288,18 +304,20 @@ html, body {
   animation: uranus-fade2 1.5s infinite;
 }
 @keyframes uranus-fade1 {
-  5%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes uranus-fade2 {
-  5%, 50% { opacity: 0; }
-  55%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .neptune-container {
   position: absolute;
-  top: 58%;
-  right: -5%;
+  top: 56%;
+  right: -4%;
   width: 220px;
   height: 220px;
   z-index: 10;
@@ -319,12 +337,14 @@ html, body {
   animation: neptune-fade2 1.5s infinite;
 }
 @keyframes neptune-fade1 {
-  5%, 50% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+    0%, 40% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes neptune-fade2 {
-  5%, 50% { opacity: 0; }
-  55%, 100% { opacity: 1; }
+    0%, 40% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .alien-bot {
