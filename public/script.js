@@ -1,11 +1,10 @@
-// Space Bot JavaScript - Handles all interactions and API calls
-
 // Global variables
 let chatVisible = false;
 let isLoading = false;
 
 // DOM Elements
 const alienBot = document.getElementById('alienBot');
+const sleepingCat = document.getElementById('sleepingCat'); // Add sleeping cat element
 const chatContainer = document.getElementById('chatContainer');
 const chatOverlay = document.getElementById('chatOverlay');
 const closeChat = document.getElementById('closeChat');
@@ -13,8 +12,6 @@ const messageInput = document.getElementById('messageInput');
 const sendButton = document.getElementById('sendButton');
 const chatMessages = document.getElementById('chatMessages');
 const loadingIndicator = document.getElementById('loadingIndicator');
-
-
 
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -25,7 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
 // Set up all event listeners
 function initializeEventListeners() {
     // Alien bot click to toggle chat
-    alienBot.addEventListener('click', toggleChat);
+    if (alienBot) {
+        alienBot.addEventListener('click', toggleChat);
+    }
+    
+    // Sleeping cat click to toggle chat
+    if (sleepingCat) {
+        sleepingCat.addEventListener('click', toggleChat);
+    }
     
     // Close chat button
     closeChat.addEventListener('click', toggleChat);
@@ -77,11 +81,21 @@ function toggleChat() {
     if (isLoading) return; // Prevent toggle during loading
     
     if (!chatVisible) {
-        // Show chat
+        // Show chat and hide sleeping cat
         chatContainer.classList.remove('closing');
         chatContainer.classList.add('visible');
         chatOverlay.classList.add('visible');
         messageInput.focus();
+        
+        // Hide sleeping cat when chat opens
+        if (sleepingCat) {
+            sleepingCat.style.display = 'none';
+        }
+        
+        // Hide alien bot if it exists
+        if (alienBot) {
+            alienBot.style.display = 'none';
+        }
         
         // Add entrance animation
         setTimeout(() => {
@@ -99,6 +113,16 @@ function toggleChat() {
         
         setTimeout(() => {
             chatContainer.classList.remove('visible', 'closing');
+            
+            // Show sleeping cat again when chat closes
+            if (sleepingCat) {
+                sleepingCat.style.display = 'block';
+            }
+            
+            // Show alien bot again if it exists
+            if (alienBot) {
+                alienBot.style.display = 'block';
+            }
         }, 300);
         
         chatVisible = false;
@@ -264,8 +288,6 @@ function addWelcomeMessage() {
         }, 500);
     }
 }
-
-
 
 // Show toast notifications
 function showToast(message, type = 'info') {

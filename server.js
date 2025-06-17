@@ -1,5 +1,3 @@
-// server.js - Backend server for Space Bot
-
 const express = require('express');
 const path = require('path');
 const OpenAI = require('openai');
@@ -11,12 +9,12 @@ const PORT = process.env.PORT || 3000;
 
 // Initialize OpenAI
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY, // You'll need to set this in your .env file
+    apiKey: process.env.OPENAI_API_KEY, 
 });
 
 // Middleware
-app.use(express.json()); // Parse JSON bodies
-app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 // Space-related system prompt for consistent responses
 const SPACE_SYSTEM_PROMPT = `You are a friendly, enthusiastic space bot with the personality of an excited alien explorer. You love teaching humans about space in a fun, engaging way. 
@@ -71,8 +69,8 @@ app.post('/api/chat', async (req, res) => {
                     content: message
                 }
             ],
-            max_tokens: 200, // Limit response length
-            temperature: 0.8, // Add some creativity
+            max_tokens: 200, 
+            temperature: 0.8, 
         });
 
         const botResponse = completion.choices[0].message.content;
@@ -89,7 +87,7 @@ app.post('/api/chat', async (req, res) => {
     } catch (error) {
         console.error('Error in chat endpoint:', error);
         
-        // Handle different types of errors
+        // Errors
         if (error.code === 'insufficient_quota') {
             res.status(503).json({
                 success: false,
@@ -121,7 +119,7 @@ app.get('/api/health', (req, res) => {
     });
 });
 
-// Space facts endpoint (bonus feature)
+// Space facts 
 app.get('/api/space-fact', (req, res) => {
     const spaceFacts = [
         "🌟 A neutron star is so dense that a teaspoon of its material would weigh about 6 billion tons!",
@@ -150,7 +148,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Handle 404 errors
+// 404 errors
 app.use((req, res) => {
     res.status(404).json({
         success: false,

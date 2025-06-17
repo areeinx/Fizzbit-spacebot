@@ -34,10 +34,10 @@ html, body {
     object-fit: contain;
 }
 .sun-img1 {
-    animation: sun-fade1 1.5s infinite;
+    animation: sun-fade1 1.7s infinite;
 }
 .sun-img2 {
-    animation: sun-fade2 1.5s infinite;
+    animation: sun-fade2 1.7s infinite;
 }
 @keyframes sun-fade1 {
     0%, 40% { opacity: 1; }
@@ -349,8 +349,8 @@ html, body {
 
 .alien-bot {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    top: 47%;
+    right: 24%;
     width: 80px;
     height: 80px;
     cursor: pointer;
@@ -369,12 +369,12 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: drop-shadow(0 0 20px rgba(127, 219, 255, 0.5));
+    filter: drop-shadow(0 0 10px rgba(127, 255, 195, 0.475));
     animation: alien-pulse 2s ease-in-out infinite;
 }
 @keyframes alien-pulse {
-    0%, 100% { filter: drop-shadow(0 0 20px rgba(127, 219, 255, 0.5)); }
-    50% { filter: drop-shadow(0 0 30px rgba(127, 219, 255, 0.8)); }
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(127, 255, 212, 0.5)); }
+    50% { filter: drop-shadow(0 0 20px rgba(127, 255, 197, 0.619)); }
 }
 .alien-glow {
     position: absolute;
@@ -382,8 +382,8 @@ html, body {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: radial-gradient(circle, rgba(127, 219, 255, 0.3), transparent);
-    border-radius: 50%;
+    background: radial-gradient(circle, rgba(127, 255, 204, 0.3), transparent);
+    border-radius: 30%;
     animation: glow-pulse 2s ease-in-out infinite alternate;
     pointer-events: none;
 }
@@ -395,10 +395,11 @@ html, body {
 /* Chat Container Styles */
 .chat-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 400px;
-    height: 600px;
+    top: 15%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
     background: rgba(0, 0, 30, 0.95);
     border-radius: 20px;
     border: 2px solid #7fdbff;
