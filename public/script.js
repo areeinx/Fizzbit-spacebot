@@ -13,13 +13,12 @@ const sendButton = document.getElementById('sendButton');
 const chatMessages = document.getElementById('chatMessages');
 const loadingIndicator = document.getElementById('loadingIndicator');
 
-// Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeEventListeners();
     addWelcomeMessage();
 });
 
-// Set up all event listeners
+// Event listners
 function initializeEventListeners() {
     // Alien bot click to toggle chat
     if (alienBot) {

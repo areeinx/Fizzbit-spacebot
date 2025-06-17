@@ -1,22 +1,21 @@
 html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-image: url('assets/starbg1.png');
+    background-size: cover;
+    background-position: center;
+    animation: starLoop 1.3s steps(3) infinite;
+}
+@keyframes starLoop {
+    0%   { background-image: url('assets/starbg1.png'); }
+    33%  { background-image: url('assets/starbg2.png'); }
+    66%  { background-image: url('assets/starbg3.png'); }
+}
 
-    body {
-      background-image: url('assets/starbg1.png');
-      background-size: cover;
-      background-position: center;
-      animation: starLoop 1.3s steps(3) infinite;
-    }
-
-    @keyframes starLoop {
-      0%   { background-image: url('assets/starbg1.png'); }
-      33%  { background-image: url('assets/starbg2.png'); }
-      66%  { background-image: url('assets/starbg3.png'); }
-    }
-
+/*Sun*/
 .sun-container {
     position: absolute;
     top: 8.5%;
@@ -50,27 +49,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Mercury*/
 .mercury-container {
-  position: absolute;
-  top: 54%;
-  right: 59%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 54%;
+    right: 59%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .mercury-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 37%;
-  height: 37%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37%;
+    height: 37%;
+    object-fit: contain;
 }
 .mercury-img1 {
-  animation: mercury-fade1 1.5s infinite;
+    animation: mercury-fade1 1.5s infinite;
 }
 .mercury-img2 {
-  animation: mercury-fade2 1.5s infinite;
+    animation: mercury-fade2 1.5s infinite;
 }
 @keyframes mercury-fade1 {
     0%, 40% { opacity: 1; }
@@ -78,32 +78,33 @@ html, body {
     100% { opacity: 1; }
 }
 @keyframes mercury-fade2 {
-     0%, 40% { opacity: 0; }
+    0%, 40% { opacity: 0; }
     50%, 90% { opacity: 1; }
     100% { opacity: 0; }
 }
-   
+
+/*Venus*/   
 .venus-container {
-  position: absolute;
-  top: 38%;
-  right: 55%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 38%;
+    right: 55%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .venus-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 44%;
-  height: 44%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44%;
+    height: 44%;
+    object-fit: contain;
 }
 .venus-img1 {
-  animation: venus-fade1 1.5s infinite;
+    animation: venus-fade1 1.5s infinite;
 }
 .venus-img2 {
-  animation: venus-fade2 1.5s infinite;
+    animation: venus-fade2 1.5s infinite;
 }
 @keyframes venus-fade1 {
     0%, 40% { opacity: 1; }
@@ -116,27 +117,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Earth*/
 .earth-container {
-  position: absolute;
-  top: 47%;
-  right: 49%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 47%;
+    right: 49%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .earth-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 44%;
-  height: 44%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44%;
+    height: 44%;
+    object-fit: contain;
 }
 .earth-img1 {
-  animation: earth-fade1 1.5s infinite;
+    animation: earth-fade1 1.5s infinite;
 }
 .earth-img2 {
-  animation: earth-fade2 1.5s infinite;
+    animation: earth-fade2 1.5s infinite;
 }
 @keyframes earth-fade1 {
     0%, 40% { opacity: 1; }
@@ -149,27 +151,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Moon*/
 .moon-container {
-  position: absolute;
-  top: 43%;
-  right: 44%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 43%;
+    right: 44%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .moon-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: 20%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
 }
 .moon-img1 {
-  animation: moon-fade1 1.5s infinite;
+    animation: moon-fade1 1.5s infinite;
 }
 .moon-img2 {
-  animation: moon-fade2 1.5s infinite;
+    animation: moon-fade2 1.5s infinite;
 }
 @keyframes moon-fade1 {
     0%, 40% { opacity: 1; }
@@ -182,27 +185,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Mars*/
 .mars-container {
-  position: absolute;
-  top: 50%;
-  right: 41%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 50%;
+    right: 41%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .mars-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 44%;
-  height: 44%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44%;
+    height: 44%;
+    object-fit: contain;
 }
 .mars-img1 {
-  animation: mars-fade1 1.5s infinite;
+    animation: mars-fade1 1.5s infinite;
 }
 .mars-img2 {
-  animation: mars-fade2 1.5s infinite;
+    animation: mars-fade2 1.5s infinite;
 }
 @keyframes mars-fade1 {
     0%, 40% { opacity: 1; }
@@ -215,27 +219,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Jupiter*/
 .jupiter-container {
-  position: absolute;
-  top: 26%;
-  right: 35.5%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 26%;
+    right: 35.5%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .jupiter-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120%;
-  height: 120%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    object-fit: contain;
 }
 .jupiter-img1 {
-  animation: jupiter-fade1 1.5s infinite;
+    animation: jupiter-fade1 1.5s infinite;
 }
 .jupiter-img2 {
-  animation: jupiter-fade2 1.5s infinite;
+    animation: jupiter-fade2 1.5s infinite;
 }
 @keyframes jupiter-fade1 {
     0%, 40% { opacity: 1; }
@@ -248,27 +253,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Saturn*/
 .saturn-container {
-  position: absolute;
-  top: 47%;
-  right: 17%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 47%;
+    right: 17%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .saturn-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 95%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
 }
 .saturn-img1 {
-  animation: saturn-fade1 1.5s infinite;
+    animation: saturn-fade1 1.5s infinite;
 }
 .saturn-img2 {
-  animation: saturn-fade2 1.5s infinite;
+    animation: saturn-fade2 1.5s infinite;
 }
 @keyframes saturn-fade1 {
     0%, 40% { opacity: 1; }
@@ -281,27 +287,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Uranus*/
 .uranus-container {
-  position: absolute;
-  top: 30%;
-  right: 4%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .uranus-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 65%;
-  height: 65%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
 }
 .uranus-img1 {
-  animation: uranus-fade1 1.5s infinite;
+    animation: uranus-fade1 1.5s infinite;
 }
 .uranus-img2 {
-  animation: uranus-fade2 1.5s infinite;
+    animation: uranus-fade2 1.5s infinite;
 }
 @keyframes uranus-fade1 {
     0%, 40% { opacity: 1; }
@@ -314,27 +321,28 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Neptune*/
 .neptune-container {
-  position: absolute;
-  top: 56%;
-  right: -4%;
-  width: 220px;
-  height: 220px;
-  z-index: 10;
+    position: absolute;
+    top: 56%;
+    right: -4%;
+    width: 220px;
+    height: 220px;
+    z-index: 10;
 }
 .neptune-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
 }
 .neptune-img1 {
-  animation: neptune-fade1 1.5s infinite;
+    animation: neptune-fade1 1.5s infinite;
 }
 .neptune-img2 {
-  animation: neptune-fade2 1.5s infinite;
+    animation: neptune-fade2 1.5s infinite;
 }
 @keyframes neptune-fade1 {
     0%, 40% { opacity: 1; }
@@ -347,10 +355,11 @@ html, body {
     100% { opacity: 0; }
 }
 
+/*Alien Sleeping*/
 .alien-bot {
     position: fixed;
     top: 47%;
-    right: 24%;
+    right: 23%;
     width: 80px;
     height: 80px;
     cursor: pointer;
@@ -503,7 +512,7 @@ html, body {
     to { opacity: 1; transform: translateY(0); }
 }
 .user-message {
-    background: linear-gradient(145deg, #39cccc, #7fdbff);
+    background: linear-gradient(145deg, #e3980f, #7fffd9);
     color: #000;
     margin-left: auto;
     border-bottom-right-radius: 5px;
@@ -533,7 +542,7 @@ html, body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #7fdbff;
+    background: #3b758b;
     margin: 0 3px;
     animation: loading-bounce 1.4s infinite ease-in-out both;
 }
@@ -655,3 +664,4 @@ html, body {
         font-size: 14px;
     }
 }
+
