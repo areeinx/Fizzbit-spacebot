@@ -29,7 +29,16 @@
 <link rel="preload" href="assets/uranus2.png" as="image">
 <link rel="preload" href="assets/neptune1.png" as="image">
 <link rel="preload" href="assets/neptune2.png" as="image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 <body>
+    <div class="space-intro">
+        <h1>Welcome to the Outerverse 🌠</h1>
+        <p>Psst... Fizzbit’s snoozing on Saturn. Click to wake the cosmic cat</p>
+    </div>
+
     <!-- Sun -->
     <div class="sun-container">
         <img src="assets/sun1.png" alt="Sun" class="sun-img sun-img1">
@@ -99,8 +108,13 @@
     <!-- Chat Interface -->
     <div class="chat-container" id="chatContainer">
         <div class="chat-header">
-            <button class="close-chat" id="closeChat">&times;</button>
+            <div class="cat-wrapper">
+                <img id="catStatus" class="cat-status" src="assets/alienhappy.png" />
+            <div class="cat-glow"></div>
         </div>
+        <h2>Welcome to FizzFeed</h2>    
+        <button class="close-chat" id="closeChat">&times;</button>
+    </div>
         
         <div class="chat-messages" id="chatMessages">
             <div class="message bot-message">
@@ -115,11 +129,11 @@
                 <span></span>
                 <span></span>
             </div>
-            <p>Space Bot is thinking...</p>
+            <p>Composing thoughts in zero gravity 🚀🧃</p>
         </div>
         
         <div class="chat-input">
-            <input type="text" id="messageInput" placeholder="Ask me about space..." maxlength="500">
+            <input type="text" id="messageInput" placeholder="Shoot a chill Q my way" maxlength="500">
             <button class="send-button" id="sendButton">
                 <span>🚀</span>
             </button>

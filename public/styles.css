@@ -2,7 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
 }
+
 body {
     background-image: url('assets/starbg1.png');
     background-size: cover;
@@ -14,6 +19,7 @@ body {
     33%  { background-image: url('assets/starbg2.png'); }
     66%  { background-image: url('assets/starbg3.png'); }
 }
+
 
 /*Sun*/
 .sun-container {
@@ -122,8 +128,8 @@ body {
     position: absolute;
     top: 47%;
     right: 49%;
-    width: 220px;
-    height: 220px;
+    width: 225px;
+    height: 225px;
     z-index: 10;
 }
 .earth-img {
@@ -257,7 +263,7 @@ body {
 .saturn-container {
     position: absolute;
     top: 47%;
-    right: 17%;
+    right: 18%;
     width: 220px;
     height: 220px;
     z-index: 10;
@@ -357,14 +363,14 @@ body {
 
 /*Alien Sleeping*/
 .alien-bot {
-    position: fixed;
+    position: absolute;
     top: 47%;
-    right: 23%;
+    right: 24%;
     width: 80px;
     height: 80px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    z-index: 1000;
+    z-index: 15;
     animation: alien-float 3s ease-in-out infinite;
 }
 @keyframes alien-float {
@@ -405,14 +411,14 @@ body {
 .chat-container {
     position: fixed;
     top: 15%;
-    right: 30%;
+    right: 27%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 400px;
-    background: rgba(0, 0, 30, 0.95);
+    width: 600px;
+    height: 450px;
+    background: #121212;
     border-radius: 20px;
-    border: 2px solid #7fdbff;
-    box-shadow: 0 0 40px rgba(127, 219, 255, 0.3);
+    border: 2px solid #edf2f4;
+    box-shadow: 0 0 40px #8d99ae;
     display: none;
     flex-direction: column;
     z-index: 1001;
@@ -448,28 +454,35 @@ body {
 
 /* Chat Header */
 .chat-header {
-    background: linear-gradient(145deg, #7fdbff, #39cccc);
+    position: relative;
+    background: #edf2f4;
     color: #000;
-    padding: 15px 20px;
+    padding: 15px 20px 15px 20px;
     border-radius: 18px 18px 0 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    font-weight: center;
     font-weight: bold;
+    overflow: visible;
 }
 .chat-header h3 {
     margin: 0;
     font-size: 16px;
 }
 .close-chat {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
     background: none;
     border: none;
     color: #000;
     font-size: 24px;
     cursor: pointer;
     font-weight: bold;
-    width: 30px;
-    height: 30px;
+    width: 435x;
+    height: 35px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -477,7 +490,7 @@ body {
     transition: background-color 0.2s ease;
 }
 .close-chat:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #8d99ae;
 }
 
 /* Chat Messages */
@@ -487,7 +500,7 @@ body {
     padding: 20px;
     color: #fff;
     scrollbar-width: thin;
-    scrollbar-color: #7fdbff rgba(0, 0, 30, 0.5);
+    scrollbar-color: #8d99ae rgba(0, 0, 30, 0.5);
 }
 .chat-messages::-webkit-scrollbar {
     width: 6px;
@@ -496,14 +509,16 @@ body {
     background: rgba(0, 0, 30, 0.5);
 }
 .chat-messages::-webkit-scrollbar-thumb {
-    background: #7fdbff;
+    background: #8d99ae;
     border-radius: 3px;
 }
 .message {
+    display: inline-block;
     margin-bottom: 15px;
     padding: 12px 16px;
     border-radius: 18px;
-    max-width: 85%;
+    max-width: 850%;
+    word-wrap: break-word;
     animation: message-fade-in 0.4s ease-out;
     line-height: 1.4;
 }
@@ -512,16 +527,19 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 .user-message {
-    background: linear-gradient(145deg, #e3980f, #7fffd9);
+    background: #6a8caf;
     color: #000;
-    margin-left: auto;
     border-bottom-right-radius: 5px;
+    float: right;
+    clear: both;
 }
 .bot-message {
     background: rgba(127, 219, 255, 0.15);
-    border: 1px solid rgba(127, 219, 255, 0.3);
+    border: 1px solid #8d99ae;
     color: #fff;
     border-bottom-left-radius: 5px;
+    float: left;
+    clear: both;
 }
 
 /* Loading Indicator */
@@ -529,7 +547,7 @@ body {
     display: none;
     text-align: center;
     padding: 20px;
-    color: #7fdbff;
+    color: #6a8caf;
 }
 .loading.visible {
     display: block;
@@ -557,13 +575,13 @@ body {
 .chat-input {
     display: flex;
     padding: 20px;
-    border-top: 1px solid rgba(127, 219, 255, 0.3);
+    border-top: 1px solid #8d99ae;
     gap: 10px;
 }
 .chat-input input {
     flex: 1;
     padding: 12px 16px;
-    border: 1px solid #7fdbff;
+    border: 1px solid #6a8caf;
     border-radius: 25px;
     background: rgba(0, 0, 20, 0.8);
     color: #fff;
@@ -575,11 +593,11 @@ body {
     color: #aaa;
 }
 .chat-input input:focus {
-    border-color: #39cccc;
-    box-shadow: 0 0 10px rgba(127, 219, 255, 0.3);
+    border-color: #edf2f4;
+    box-shadow: 0 0 10px #8d99ae;
 }
 .send-button {
-    background: linear-gradient(145deg, #7fdbff, #39cccc);
+    background: #6a8caf;
     border: none;
     border-radius: 50%;
     width: 45px;
@@ -600,68 +618,75 @@ body {
     transform: scale(0.95);
 }
 
-/* Chat Overlay for mobile */
-.chat-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+.cat-wrapper {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 110px;
+    height: 110px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.cat-status {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: none;
-}
-.chat-overlay.visible {
-    display: block;
+    object-fit: contain;
+    animation: cat-pulse 2s ease-in-out infinite, cat-float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(127, 255, 195, 0.475));
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .chat-container {
-        width: 95%;
-        height: 85%;
-        right: 2.5%;
-        bottom: 2.5%;
-        border-radius: 15px;
-    }
-    
-    .alien-bot {
-        bottom: 20px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
-    }
-    
-    /* Smaller planets on mobile */
-    .sun { width: 60px; height: 60px; }
-    .jupiter { width: 50px; height: 50px; }
-    .saturn { width: 45px; height: 45px; }
-    .earth { width: 25px; height: 25px; }
-    .mars { width: 22px; height: 22px; }
-    .venus { width: 22px; height: 22px; }
-    .uranus { width: 28px; height: 28px; }
-    .neptune { width: 28px; height: 28px; }
-    .mercury { width: 18px; height: 18px; }
-    .moon { width: 15px; height: 15px; }
+.cat-glow {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle, rgba(127, 255, 204, 0.3), transparent);
+    border-radius: 30%;
+    animation: glow-pulse 2s ease-in-out infinite alternate;
+    z-index: -1;
 }
 
-@media (max-width: 480px) {
-    .chat-container {
-        width: 100%;
-        height: 100%;
-        right: 0;
-        bottom: 0;
-        border-radius: 0;
-        border: none;
-    }
-    
-    .chat-header {
-        border-radius: 0;
-        padding: 12px 15px;
-    }
-    
-    .chat-header h3 {
-        font-size: 14px;
-    }
+@keyframes cat-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes cat-pulse {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(127, 255, 212, 0.5)); }
+    50% { filter: drop-shadow(0 0 20px rgba(127, 255, 197, 0.619)); }
+}
+
+@keyframes glow-pulse {
+    0% { opacity: 0.3; transform: scale(0.8); }
+    100% { opacity: 0.8; transform: scale(1.2); }
+}
+
+.space-intro {
+    position: absolute;
+    top: 5%;
+    left: 53%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 50;
+    text-shadow: 0 0 10px #8d99ae;
+    padding: 10px 20px;
+    background: rgba(0, 0, 30, 0.6);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+.space-intro h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+}
+.space-intro p {
+    font-size: 16px;
+    margin: 8px 0 0;
+    font-weight: 400;
 }
 
