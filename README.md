@@ -45,8 +45,6 @@ Fizzbit-spacebot/
 
 ```
 
-```
-
 1. **Clone the project**
    ```bash
    git clone https://github.com/areeinx/fizzbit-spacebot.git
