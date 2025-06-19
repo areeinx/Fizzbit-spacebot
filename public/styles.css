@@ -690,3 +690,27 @@ body {
     font-weight: 400;
 }
 
+.site-signature {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 12px;
+  color: #8d99ae;
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 12px;
+  border-radius: 12px;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(127, 255, 195, 0.3);
+}
+
+.site-signature a {
+  color: #edf2f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-signature a:hover {
+  text-decoration: underline;
+}
