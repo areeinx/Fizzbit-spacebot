@@ -39,8 +39,6 @@ Fizzbit-spacebot/
 ├── package-lock.json
 └── server.js
 
----
-
 ```
 
 ## 🔧 How to Run
