@@ -39,11 +39,13 @@ Fizzbit-spacebot/
 ├── package-lock.json
 └── server.js
 
----
+```
 
 ## 🔧 How to Run
 
----
+```
+
+```
 
 1. **Clone the project**
    ```bash
@@ -70,6 +72,7 @@ Fizzbit-spacebot/
 5. **Open in browser**  
    Navigate to: [http://localhost:3000](http://localhost:3000)
 
+---
 
 ## 🤖 Tech Stack
 
