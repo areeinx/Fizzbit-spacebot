@@ -23,6 +23,8 @@ It’s unhinged, it’s educational, it glows — and it talks like it watched t
 
 ## 📁 Folder Structure
 
+```
+
 Fizzbit-spacebot/
 ├── node_modules/
 ├── public/
@@ -37,8 +39,9 @@ Fizzbit-spacebot/
 ├── package.json
 ├── package-lock.json
 └── server.js
- ```
- ```
+
+```
+---
 
 ## 🔧 How to Run
 
