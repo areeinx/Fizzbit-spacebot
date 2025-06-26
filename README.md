@@ -23,7 +23,6 @@ It’s unhinged, it’s educational, it glows — and it talks like it watched t
 
 ## 📁 Folder Structure
 
-```
 Fizzbit-spacebot/
 ├── node_modules/
 ├── public/
@@ -39,12 +38,7 @@ Fizzbit-spacebot/
 ├── package-lock.json
 └── server.js
 
-```
-
 ## 🔧 How to Run
-
-```
-```
 
 1. **Clone the project**
    ```bash
@@ -93,9 +87,3 @@ Fizzbit-spacebot/
 
 Made with way too much coffee ☕ and space vibes 🚀  
 Art, CSS, and everything weird: Areeba
-
----
-
-## 🌌 License
-
-MIT — go wild, but give Fizzbit a nap break 💤
