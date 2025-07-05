@@ -169,7 +169,7 @@ app.use((req, res) => {
     });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, (0.0.0.0) => {
     console.log(`🚀 Fizzbit is online and orbiting on port ${PORT}`);
     console.log(`🪐 Chat with your alien cat companion at http://localhost:${PORT}`);
     console.log(`🔑 API Key status: ${process.env.OPENAI_API_KEY ? '✅ SET' : '❌ NOT SET'}`);
